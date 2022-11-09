@@ -24,8 +24,6 @@ public class PlayerController : MonoBehaviour
 
     //Range player position
     public float xRange;
-    public float zMin;
-    public float zMax;
 
     //Change Camera Perspective
     public Camera mainCamera;
@@ -43,14 +41,6 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        }
-        if (transform.position.z < zMin)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zMin);
-        }
-        if (transform.position.z > zMax)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zMax);
         }
 
         //This is where we get player horizontal input        
