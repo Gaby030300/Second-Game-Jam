@@ -20,12 +20,17 @@ public class PlayerController : MonoBehaviour
     //Projectile
     public GameObject projectilePrefab;
     public Transform projectileSpawnPoint;
-    public float coolDown = 2;
+    public float coolDown = 1;
 
     //Range player position
     public float xRange;
     public float zMin;
     public float zMax;
+
+    //Change Camera Perspective
+    public Camera mainCamera;
+    public Camera secondCamera;
+    public KeyCode switchKey;
 
     private void Start()
     {
@@ -59,7 +64,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
 
         //This is where the player can jump
-        if (Input.GetButton("Jump") && (onGround || MAX_JUMP > currentJump))
+        if (Input.GetKeyDown(KeyCode.Space) && (onGround || MAX_JUMP > currentJump))
         {
             rigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             onGround = false;
@@ -76,6 +81,13 @@ public class PlayerController : MonoBehaviour
         if (coolDown >= 0)
         {
             coolDown -= Time.deltaTime;
+        }
+
+        //Change Camera perspective
+        if (Input.GetKeyDown(switchKey))
+        {
+            mainCamera.enabled = !mainCamera.enabled;
+            secondCamera.enabled = !secondCamera.enabled;
         }
     }
     //Stop player jump
