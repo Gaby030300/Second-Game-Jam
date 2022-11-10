@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5928773922092554312}
   - component: {fileID: 7343374198022215661}
   - component: {fileID: 4759197206944342823}
-  - component: {fileID: 2436679019705814150}
+  - component: {fileID: 3695386553637658726}
   m_Layer: 0
   m_Name: Vase
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6416763967617450738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.13, y: 0, z: 1.92}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2436679019705814150
+--- !u!65 &3695386553637658726
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.022999998, y: 0.04, z: 0.023000002}
-  m_Center: {x: 0.0014999998, y: 0.02, z: -0.082499996}
+  m_Size: {x: 0.575, y: 1, z: 0.5749999}
+  m_Center: {x: 0.037499994, y: 0.5, z: -2.0625}
