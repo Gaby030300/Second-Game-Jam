@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {   
     //private variables
     private float speed = 20.0f;
-    //private float speedRotation = 20.0f;
+    private float speedRotation = 45.0f;
     private float jumpSpeed = 5.0f;
     private float horizontalInput;
     private float verticalInput;
@@ -25,11 +25,6 @@ public class PlayerController : MonoBehaviour
     //Range player position
     public float xRange;
 
-    //Change Camera Perspective
-    public Camera mainCamera;
-    public Camera secondCamera;
-    public KeyCode switchKey;
-
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -46,7 +41,7 @@ public class PlayerController : MonoBehaviour
         //This is where we get player horizontal input        
         horizontalInput = Input.GetAxis("Horizontal");
         // Move the vehicle forward on the horizontal input
-        transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
+        transform.Rotate(Vector3.up, Time.deltaTime * speedRotation * horizontalInput);
 
         //This is where we get player vertical input 
         verticalInput = Input.GetAxis("Vertical");
@@ -71,13 +66,6 @@ public class PlayerController : MonoBehaviour
         if (coolDown >= 0)
         {
             coolDown -= Time.deltaTime;
-        }
-
-        //Change Camera perspective
-        if (Input.GetKeyDown(switchKey))
-        {
-            mainCamera.enabled = !mainCamera.enabled;
-            secondCamera.enabled = !secondCamera.enabled;
         }
     }
     //Stop player jump
