@@ -5,13 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {   
     //private variables
-    private float speed = 20.0f;
-    private float speedRotation = 45.0f;
-    private float jumpSpeed = 5.0f;
+    private float speed = 10.0f;
+    public float speedRotation = 45.0f;
+    private float jumpSpeed = 10.0f;
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody rigidBody;
-    private bool onGround = true;
+    public bool onGround = true;
+    
 
     //Variables for double Jump
     private const int MAX_JUMP = 2;
@@ -24,6 +25,11 @@ public class PlayerController : MonoBehaviour
 
     //Range player position
     public float xRange;
+
+    //Animator
+    public Animator animator;
+
+    
 
     private void Start()
     {
@@ -48,6 +54,11 @@ public class PlayerController : MonoBehaviour
         // Move the vehicle forward on the vertical input
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
 
+        //playeranimstate
+        animator.SetFloat("VelX", horizontalInput);
+        animator.SetFloat("VelY", verticalInput);
+        animator.SetBool("ItsGround", onGround);
+
         //This is where the player can jump
         if (Input.GetKeyDown(KeyCode.Space) && (onGround || MAX_JUMP > currentJump))
         {
@@ -57,7 +68,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Launch projectiles
-        if (Input.GetKeyDown(KeyCode.Z) && coolDown <= 0)
+        if (Input.GetMouseButtonDown(0) && coolDown <= 0)
         {
             // Launch a projectile from the player
             Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
@@ -67,6 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             coolDown -= Time.deltaTime;
         }
+        
     }
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
@@ -74,4 +86,6 @@ public class PlayerController : MonoBehaviour
         onGround = true;
         currentJump = 0;
     }
+
+    
 }

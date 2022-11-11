@@ -1216,6 +1216,7 @@ GameObject:
   - component: {fileID: 7902985170433278282}
   - component: {fileID: 7902985170433278287}
   - component: {fileID: 7902985170433278283}
+  - component: {fileID: 7007163850641728086}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1283,10 +1284,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef79e5f1d0680914ba3ce7436861b2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedRotation: 45
+  onGround: 1
   projectilePrefab: {fileID: 8898628294338815063, guid: c6eb7389980769c42b8f8bec08942d8d, type: 3}
   projectileSpawnPoint: {fileID: 1437067005}
   coolDown: 1
   xRange: 8.8
+  animator: {fileID: 7007163850641728086}
+--- !u!95 &7007163850641728086
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020094726066007009}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a2d5b47b31c432e49887ff4a4909d345, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2932282d992fcae459855b38600e3004, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7108944900072147130
 GameObject:
   m_ObjectHideFlags: 0
