@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GalaController : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] private float speed;
+    [SerializeField] private ScoreOfGalas score;
     // Update is called once per frame
     void Update()
     {
@@ -15,6 +16,7 @@ public class GalaController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            score.aumentScore();
             Destroy(gameObject);
         }
     }

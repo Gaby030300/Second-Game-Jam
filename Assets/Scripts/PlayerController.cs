@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{   
+{
     //private variables
-    private float speed = 10.0f;
+    [SerializeField] private float speed = 10.0f;
     public float speedRotation = 45.0f;
-    private float jumpSpeed = 10.0f;
+    [SerializeField] private float jumpSpeed = 10.0f;
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody rigidBody;
