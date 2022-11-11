@@ -5,13 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {   
     //private variables
-    private float speed = 20.0f;
+    private float speed = 10.0f;
     public float speedRotation = 45.0f;
-    private float jumpSpeed = 5.0f;
+    private float jumpSpeed = 10.0f;
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody rigidBody;
-    private bool onGround = true;
+    public bool onGround = true;
+    
 
     //Variables for double Jump
     private const int MAX_JUMP = 2;
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     //Animator
     public Animator animator;
+
+    
 
     private void Start()
     {
@@ -75,6 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             coolDown -= Time.deltaTime;
         }
+        
     }
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
@@ -82,4 +86,6 @@ public class PlayerController : MonoBehaviour
         onGround = true;
         currentJump = 0;
     }
+
+    
 }
