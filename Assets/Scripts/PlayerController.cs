@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     private float verticalInput;
     private Rigidbody rigidBody;
     public bool onGround = true;
-    
+    public LayerMask layerMask;
+
 
     //Variables for double Jump
     private const int MAX_JUMP = 2;
@@ -71,20 +72,25 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && coolDown <= 0)
         {
             // Launch a projectile from the player
-            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.transform.rotation);
             coolDown = 1;
         }
         if (coolDown >= 0)
         {
             coolDown -= Time.deltaTime;
         }
-        
     }
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
-    {
-        onGround = true;
-        currentJump = 0;
+    {        
+        if (Physics.Raycast(transform.position, Vector3.down, 4f))
+        {
+            if (collision.gameObject.CompareTag("Floor"))
+            {
+                onGround = true;
+                currentJump = 0;
+            }
+        }
     }
 
     
