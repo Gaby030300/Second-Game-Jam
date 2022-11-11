@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {   
     //private variables
     private float speed = 20.0f;
-    private float speedRotation = 45.0f;
+    public float speedRotation = 45.0f;
     private float jumpSpeed = 5.0f;
     private float horizontalInput;
     private float verticalInput;
@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
 
     //Range player position
     public float xRange;
+
+    //Animator
+    public Animator animator;
 
     private void Start()
     {
@@ -47,6 +50,11 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         // Move the vehicle forward on the vertical input
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+
+        //playeranimstate
+        animator.SetFloat("VelX", horizontalInput);
+        animator.SetFloat("VelY", verticalInput);
+        animator.SetBool("ItsGround", onGround);
 
         //This is where the player can jump
         if (Input.GetKeyDown(KeyCode.Space) && (onGround || MAX_JUMP > currentJump))
