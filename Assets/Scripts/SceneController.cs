@@ -13,9 +13,13 @@ public class SceneController : MonoBehaviour
     {        
         SceneManager.LoadScene("Credits");
     }
-    public void OnButtonPlay()
+    public void OnButtonInstructions()
     {        
+        SceneManager.LoadScene("Instructions");
+    }
+    public void OnButtonPlay()
+    {
         SceneManager.LoadScene("Level1");
     }
-    
+
 }

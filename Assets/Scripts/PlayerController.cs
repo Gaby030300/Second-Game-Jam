@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Launch projectiles
-        if (Input.GetKeyDown(KeyCode.Z) && coolDown <= 0)
+        if (Input.GetMouseButtonDown(0) && coolDown <= 0)
         {
             // Launch a projectile from the player
             Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
