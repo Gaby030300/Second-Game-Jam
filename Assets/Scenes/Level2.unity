@@ -414,6 +414,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6497942799314735192, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497942799314735192, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.00062420964
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497942799314735192, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497942799314735192, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.9987516
+      objectReference: {fileID: 0}
     - target: {fileID: 6497942799314735194, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
       propertyPath: m_Name
       value: Main Camera
