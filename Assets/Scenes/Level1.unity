@@ -9547,6 +9547,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615748573}
   m_Mesh: {fileID: -2432090755550338912, guid: 8dca010a4d27598469c634419cccfba7, type: 3}
+--- !u!114 &618217645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 916589043146756109, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
+  m_PrefabInstance: {fileID: 768365711}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706a14e687a99114588088541105cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &624238940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11492,6 +11503,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 916589041800609637, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147825370487525973, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -29277,6 +29292,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7902985170433278283, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 618217645}
     - target: {fileID: 7902985170433278283, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: xRange
       value: 33
