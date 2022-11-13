@@ -6,7 +6,19 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public Slider healthBar;
+    //Player Health    
+    public float maxHealth = 100.0f;
+    public float currentHealth;
+    public bool Death;
     
+
+    //animator
+    public Animator animator;
+
+    [SerializeField] private PlayerController playerController;
+
+
+
     public void SetMaxHealth(float health)
     {
         healthBar.maxValue = health;
@@ -16,4 +28,54 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBar.value = health;
     }
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        SetMaxHealth(maxHealth);
+        animator = GetComponent<Animator>();
+    }
+    void Update()
+    {
+       // Health Player
+        //if (Input.GetKeyDown(KeyCode.Z))
+        //{
+        //    TakeDamage(20.0f);
+        //}
+        
+    }
+    //Damage player
+    
+    public void TakeDamage(float damage)
+    {
+        
+        currentHealth -= damage;
+        SetHealth(currentHealth);
+        if (currentHealth > 0)
+        {
+            Debug.Log("Hit");
+            animator.SetBool("Hit", true);
+            StartCoroutine(SetHitFalse());
+
+        }
+        
+        else
+        {
+            if (!Death)
+            {
+                Debug.Log("Game Over");
+                animator.SetBool("Death", true);
+                playerController.enabled = false;
+            }
+        }
+    }
+
+
+
+    private IEnumerator SetHitFalse()
+    {
+        yield return new WaitForSeconds(1);
+        animator.SetBool("Hit", false);
+    }
+
 }
