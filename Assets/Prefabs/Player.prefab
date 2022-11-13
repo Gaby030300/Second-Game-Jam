@@ -529,8 +529,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 2771931029273825743}
   m_AABB:
-    m_Center: {x: -0.033406973, y: 0.20029509, z: 0.071536005}
-    m_Extent: {x: 3.0322564, y: 2.463162, z: 0.7802004}
+    m_Center: {x: -0.058816016, y: 0.20029497, z: 0.071536005}
+    m_Extent: {x: 1.307622, y: 2.463162, z: 0.7802004}
   m_DirtyAABB: 0
 --- !u!1 &2555845193834834029
 GameObject:
@@ -1217,6 +1217,7 @@ GameObject:
   - component: {fileID: 7902985170433278287}
   - component: {fileID: 7902985170433278283}
   - component: {fileID: 7007163850641728086}
+  - component: {fileID: 995470221}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1268,10 +1269,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.329504
-  m_Height: 4.6461735
+  m_Radius: 1.117096
+  m_Height: 4.9033375
   m_Direction: 1
-  m_Center: {x: -0.17049408, y: 2.226716, z: -6.465102e-16}
+  m_Center: {x: 0.041913986, y: 2.098134, z: -1.2123549e-15}
 --- !u!114 &7902985170433278283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,12 +1285,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef79e5f1d0680914ba3ce7436861b2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedRotation: 45
+  speedRotation: 200
   onGround: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   projectilePrefab: {fileID: 8898628294338815063, guid: c6eb7389980769c42b8f8bec08942d8d, type: 3}
   projectileSpawnPoint: {fileID: 1437067005}
   coolDown: 1
-  xRange: 8.8
+  xRange: 99
   animator: {fileID: 7007163850641728086}
 --- !u!95 &7007163850641728086
 Animator:
@@ -1311,6 +1315,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &995470221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020094726066007009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706a14e687a99114588088541105cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  maxHealth: 100
+  currentHealth: 0
+  Death: 0
+  animator: {fileID: 7007163850641728086}
+  playerController: {fileID: 7902985170433278283}
 --- !u!1 &7108944900072147130
 GameObject:
   m_ObjectHideFlags: 0

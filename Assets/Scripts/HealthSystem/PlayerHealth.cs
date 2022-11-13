@@ -35,15 +35,7 @@ public class PlayerHealth : MonoBehaviour
         SetMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
     }
-    void Update()
-    {
-       // Health Player
-        //if (Input.GetKeyDown(KeyCode.Z))
-        //{
-        //    TakeDamage(20.0f);
-        //}
-        
-    }
+   
     //Damage player
     
     public void TakeDamage(float damage)
