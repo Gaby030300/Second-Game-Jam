@@ -4,21 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{   
+{
     //private variables
-    private float speed = 10.0f;
+    [SerializeField] private float speed = 10.0f;
     public float speedRotation = 45.0f;
-    private float jumpSpeed = 10.0f;
+    [SerializeField] private float jumpSpeed = 10.0f;
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody rigidBody;
     public bool onGround = true;
     public LayerMask layerMask;
 
-    //Player Health    
+    /*Player Health    
     public float maxHealth = 100.0f;
     public float currentHealth;
-    public PlayerHealth health;
+    public PlayerHealth health;*/
 
     //Variables for double Jump
     private const int MAX_JUMP = 2;
@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-        currentHealth = maxHealth;
-        health.SetMaxHealth(maxHealth);
+       /* currentHealth = maxHealth;
+        health.SetMaxHealth(maxHealth); */
     }
 
     void Update()
@@ -85,13 +85,19 @@ public class PlayerController : MonoBehaviour
             coolDown -= Time.deltaTime;
         }
 
-        //Health Player
+        /*Health Player
         if (Input.GetKeyDown(KeyCode.Z))
         {
             TakeDamage(20.0f);
+            animator.SetFloat("Hit", 1.0f);
+
         }
+        else
+        {
+            animator.SetFloat("Hit", 0.0f);
+        } */
     }
-    //Damage player
+    /*Damage player
     private void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -99,8 +105,11 @@ public class PlayerController : MonoBehaviour
         if(currentHealth == 0)
         {
             Debug.Log("Game Over");
-        }
+            animator.SetBool("Death", true);
+            
+        } 
     }
+*/
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
     {        
