@@ -1320,9 +1320,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.010625005
     y: 0
-    width: 1
+    width: 0.97875
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -3126,6 +3126,10 @@ PrefabInstance:
     - target: {fileID: 7147825370958800336, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
       propertyPath: m_Name
       value: FadeInTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147825370958800336, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
