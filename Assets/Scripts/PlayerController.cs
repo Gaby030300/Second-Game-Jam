@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,10 @@ public class PlayerController : MonoBehaviour
     public bool onGround = true;
     public LayerMask layerMask;
 
+    /*Player Health    
+    public float maxHealth = 100.0f;
+    public float currentHealth;
+    public PlayerHealth health;*/
 
     //Variables for double Jump
     private const int MAX_JUMP = 2;
@@ -28,13 +33,13 @@ public class PlayerController : MonoBehaviour
     public float xRange;
 
     //Animator
-    public Animator animator;
-
-    
+    public Animator animator;    
 
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+       /* currentHealth = maxHealth;
+        health.SetMaxHealth(maxHealth); */
     }
 
     void Update()
@@ -79,7 +84,32 @@ public class PlayerController : MonoBehaviour
         {
             coolDown -= Time.deltaTime;
         }
+
+        /*Health Player
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            TakeDamage(20.0f);
+            animator.SetFloat("Hit", 1.0f);
+
+        }
+        else
+        {
+            animator.SetFloat("Hit", 0.0f);
+        } */
     }
+    /*Damage player
+    private void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        health.SetHealth(currentHealth);
+        if(currentHealth == 0)
+        {
+            Debug.Log("Game Over");
+            animator.SetBool("Death", true);
+            
+        } 
+    }
+*/
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
     {        

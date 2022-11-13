@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 7615d1b5eb2edab44afa35490723dabf
+  - enabled: 1
+    path: Assets/Scenes/DeathTrash.unity
+    guid: d2f4cd26a26a73041aed6bc961ae3cbc
+  - enabled: 1
+    path: Assets/Scenes/DeathChocolate.unity
+    guid: 9510a5353b39a384ca10e4da9bd3c110
+  - enabled: 1
+    path: Assets/Scenes/DeathKitchen.unity
+    guid: 5aec81ef55374644ebd3d45aa85fe62a
   m_configObjects: {}
