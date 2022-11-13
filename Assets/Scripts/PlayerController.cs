@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
             TakeDamage(20.0f);
         }
     }
+    //Damage player
     private void TakeDamage(float damage)
     {
         currentHealth -= damage;
