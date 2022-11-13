@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CamaraPlayer : MonoBehaviour
 {
-    private Transform objetivo;
+    [SerializeField] private Transform objetivo;
     public float alturaJugador = 1f;
     public float distanciaPared = 0.1f;
     public float maxDistancia = 14f;
@@ -31,13 +31,7 @@ public class CamaraPlayer : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
-        GameObject pc = GameObject.Find("Player");
-        if (pc != null)
-        {
-            objetivo = pc.transform;
-        }
-
+    {             
         Vector3 angulos = transform.eulerAngles;
         xDeg = angulos.x;
         yDeg = angulos.y;
@@ -52,15 +46,6 @@ public class CamaraPlayer : MonoBehaviour
 
     private void LateUpdate()
     {
-        GameObject pc = GameObject.Find("Player");
-        if (pc == null)
-        {
-            return;
-        }
-        else
-        {
-            objetivo = pc.transform;
-        }
 
         Vector3 vTargetOffset;
 

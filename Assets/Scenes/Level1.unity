@@ -19915,6 +19915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 6497942799314735198, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
+      propertyPath: objetivo
+      value: 
+      objectReference: {fileID: 1410613448}
     - target: {fileID: 6497942799314735199, guid: 253d5f01880d04d40ac321220dd347ea, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -20130,6 +20134,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1410613448 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7649278587676242267, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+  m_PrefabInstance: {fileID: 2025859486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1412032049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20430,6 +20439,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426951489}
   m_Mesh: {fileID: -2432090755550338912, guid: 8dca010a4d27598469c634419cccfba7, type: 3}
+--- !u!114 &1428821698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 916589043146756110, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
+  m_PrefabInstance: {fileID: 768365711}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1431116847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29149,6 +29169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 995470221, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1428821698}
     - target: {fileID: 1437067004, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_Layer
       value: 3
