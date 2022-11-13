@@ -74,12 +74,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -137,7 +137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -12.454, y: -2.4059}
+  m_AnchoredPosition: {x: -12.4539795, y: -2.4059143}
   m_SizeDelta: {x: 0, y: 6.7397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &916589041800609635
@@ -365,7 +365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -4.9999695, y: -2.9}
+  m_AnchoredPosition: {x: -4.999939, y: -2.899994}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &916589043002801044
@@ -403,7 +403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -12.454, y: -2.4059}
+  m_AnchoredPosition: {x: -12.4539795, y: -2.405899}
   m_SizeDelta: {x: 0.00022888, y: 11.747}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &916589043002801041
@@ -482,8 +482,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 379, y: -39.0771}
-  m_SizeDelta: {x: 171.5414, y: 20.0309}
+  m_AnchoredPosition: {x: 345, y: -50}
+  m_SizeDelta: {x: 171.54138, y: 20.030884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916589043146756110
 MonoBehaviour:
@@ -643,6 +643,10 @@ PrefabInstance:
     - target: {fileID: 7147825370958800336, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
       propertyPath: m_Name
       value: FadeInTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147825370958800336, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
