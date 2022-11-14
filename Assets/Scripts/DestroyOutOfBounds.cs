@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
-{   
-    private void OnTriggerEnter(Collider other)
+{
+    public float topLimit;
+
+    // Update is called once per frame
+    void Update()
     {
-        if (other.CompareTag("Wall"))
-        {            
+        // Destroy balls if y position is less than bottomLimit
+        if (transform.position.x < topLimit)
+        {
             Destroy(gameObject);
         }
     }
