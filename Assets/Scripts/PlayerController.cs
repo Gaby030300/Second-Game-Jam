@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         //This is where the player can jump
         if (Input.GetKeyDown(KeyCode.Space) && (onGround || MAX_JUMP > currentJump))
         {
-            audioSource.PlayOneShot(jumpEffect, 1);
+            audioSource.PlayOneShot(jumpEffect, 0.3f);
             rigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             onGround = false;
             currentJump++;
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && coolDown <= 0)
         {
             // Launch a projectile from the player
-            audioSource.PlayOneShot(shootEffect, 1);
+            audioSource.PlayOneShot(shootEffect, 0.3f);
             Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.transform.rotation);
             coolDown = 1;
         }
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
     }
     public void PlaySoundEffect()
     {        
-       audioSource.PlayOneShot(collectEffect, 1);
+       audioSource.PlayOneShot(collectEffect, 0.3f);
     }
 
     //Stop player jump
