@@ -12657,8 +12657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1b0824bbdd4c04791332ade79cf5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnButton: {fileID: 0}
-  OffButton: {fileID: 0}
+  OnButton: {fileID: 916589042227688882}
+  OffButton: {fileID: 916589042227688881}
 --- !u!4 &2068005614
 Transform:
   m_ObjectHideFlags: 0
@@ -13567,6 +13567,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &916589042227688881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4664610302512505419, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
+  m_PrefabInstance: {fileID: 916589042227688879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &916589042227688882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6536215419046246957, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
+  m_PrefabInstance: {fileID: 916589042227688879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1456184066719072787
