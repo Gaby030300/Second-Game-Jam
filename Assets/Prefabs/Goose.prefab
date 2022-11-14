@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.8
+      value: 104.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.3
+      value: -8.5036
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_Name
-      value: Goose (1)
+      value: Goose
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_TagString
@@ -280,6 +280,7 @@ MonoBehaviour:
   animGoose: {fileID: 521715221}
   canMove: 0
   collider: {fileID: 1367684853}
+  gooseEffect: {fileID: 8300000, guid: d6584c0a31849b2439aa6b47084c58b2, type: 3}
 --- !u!114 &1367684856
 MonoBehaviour:
   m_ObjectHideFlags: 0

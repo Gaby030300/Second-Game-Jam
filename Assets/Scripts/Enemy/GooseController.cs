@@ -12,12 +12,17 @@ public class GooseController : MonoBehaviour
     [SerializeField] private bool canMove;
     [SerializeField] private Collider collider;
 
+    //Audio Effects
+    AudioSource audioSource;
+    public AudioClip gooseEffect;
+
     void Start()
     {
         canMove = true;
         animGoose.SetBool("Die", false);
         agent = GetComponent<NavMeshAgent>();        
         player = GameObject.FindWithTag("Player").transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -40,6 +45,7 @@ public class GooseController : MonoBehaviour
 
     public void die()
     {
+        audioSource.PlayOneShot(gooseEffect, 1);
         collider.enabled = false;
         canMove = false;        
         animGoose.SetBool("Die", true);
