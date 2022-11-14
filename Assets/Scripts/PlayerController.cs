@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     AudioSource audioSource;
     public AudioClip shootEffect;
     public AudioClip jumpEffect;
+    public AudioClip collectEffect;
 
     private void Start()
     {
@@ -86,6 +87,11 @@ public class PlayerController : MonoBehaviour
             coolDown -= Time.deltaTime;
         }
     }
+    public void PlaySoundEffect()
+    {        
+       audioSource.PlayOneShot(collectEffect, 1);
+    }
+
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
     {        
