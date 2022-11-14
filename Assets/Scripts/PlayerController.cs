@@ -15,11 +15,6 @@ public class PlayerController : MonoBehaviour
     public bool onGround = true;
     public LayerMask layerMask;
 
-    /*Player Health    
-    public float maxHealth = 100.0f;
-    public float currentHealth;
-    public PlayerHealth health;*/
-
     //Variables for double Jump
     private const int MAX_JUMP = 2;
     private int currentJump = 0;
@@ -33,13 +28,17 @@ public class PlayerController : MonoBehaviour
     public float xRange;
 
     //Animator
-    public Animator animator;    
+    public Animator animator;
+
+    //Audio Effects
+    AudioSource audioSource;
+    public AudioClip shootEffect;
+    public AudioClip jumpEffect;
 
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-       /* currentHealth = maxHealth;
-        health.SetMaxHealth(maxHealth); */
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -68,6 +67,7 @@ public class PlayerController : MonoBehaviour
         //This is where the player can jump
         if (Input.GetKeyDown(KeyCode.Space) && (onGround || MAX_JUMP > currentJump))
         {
+            audioSource.PlayOneShot(jumpEffect, 1);
             rigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             onGround = false;
             currentJump++;
@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && coolDown <= 0)
         {
             // Launch a projectile from the player
+            audioSource.PlayOneShot(shootEffect, 1);
             Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.transform.rotation);
             coolDown = 1;
         }
@@ -84,32 +85,7 @@ public class PlayerController : MonoBehaviour
         {
             coolDown -= Time.deltaTime;
         }
-
-        /*Health Player
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            TakeDamage(20.0f);
-            animator.SetFloat("Hit", 1.0f);
-
-        }
-        else
-        {
-            animator.SetFloat("Hit", 0.0f);
-        } */
     }
-    /*Damage player
-    private void TakeDamage(float damage)
-    {
-        currentHealth -= damage;
-        health.SetHealth(currentHealth);
-        if(currentHealth == 0)
-        {
-            Debug.Log("Game Over");
-            animator.SetBool("Death", true);
-            
-        } 
-    }
-*/
     //Stop player jump
     private void OnCollisionEnter(Collision collision)
     {        
