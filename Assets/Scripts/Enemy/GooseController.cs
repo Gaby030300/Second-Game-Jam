@@ -45,7 +45,7 @@ public class GooseController : MonoBehaviour
 
     public void die()
     {
-        audioSource.PlayOneShot(gooseEffect, 1);
+        audioSource.PlayOneShot(gooseEffect, 0.3f);
         collider.enabled = false;
         canMove = false;        
         animGoose.SetBool("Die", true);
