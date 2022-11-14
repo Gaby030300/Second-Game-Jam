@@ -91,21 +91,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.481507, y: 3.8294487, z: 0.9899063}
   m_Center: {x: -0.07097447, y: 2.0975852, z: -0.24974465}
---- !u!114 &5921890309411298252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6662524693892498506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d90283dfee506d44b96da64054d7800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  score: {fileID: 0}
-  collectEffect: {fileID: 8300000, guid: 348b3db9b87e6394291615bc41394e57, type: 3}
 --- !u!82 &1433230456716875547
 AudioSource:
   m_ObjectHideFlags: 0
@@ -202,3 +187,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5921890309411298252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662524693892498506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d90283dfee506d44b96da64054d7800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  score: {fileID: 0}
+  collectEffect: {fileID: 8300000, guid: 348b3db9b87e6394291615bc41394e57, type: 3}

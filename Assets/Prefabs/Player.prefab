@@ -1300,6 +1300,7 @@ MonoBehaviour:
   animator: {fileID: 1410613443}
   shootEffect: {fileID: 8300000, guid: ed782917eb6f4a747a24b6cc14cf6d5c, type: 3}
   jumpEffect: {fileID: 8300000, guid: 308cfe405d5094c4a9c824fbd585ad28, type: 3}
+  collectEffect: {fileID: 8300000, guid: 348b3db9b87e6394291615bc41394e57, type: 3}
 --- !u!114 &995470221
 MonoBehaviour:
   m_ObjectHideFlags: 0

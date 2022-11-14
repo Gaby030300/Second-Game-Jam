@@ -871,10 +871,6 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 238748055}
-    - target: {fileID: 5921890309411298252, guid: 002d177a87b849f4bba99d3c5a1b33e3, type: 3}
-      propertyPath: collectEffect
-      value: 
-      objectReference: {fileID: 8300000, guid: 348b3db9b87e6394291615bc41394e57, type: 3}
     - target: {fileID: 6286420641747525360, guid: 002d177a87b849f4bba99d3c5a1b33e3, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1030,6 +1026,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 715980497}
+    - target: {fileID: 57498010, guid: 01f70e4e02a760c4681cff3a7706f87d, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: d6584c0a31849b2439aa6b47084c58b2, type: 3}
+    - target: {fileID: 57498010, guid: 01f70e4e02a760c4681cff3a7706f87d, type: 3}
+      propertyPath: gooseEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: d6584c0a31849b2439aa6b47084c58b2, type: 3}
+    - target: {fileID: 1367684856, guid: 01f70e4e02a760c4681cff3a7706f87d, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: cd9dc1339eabf974e8efe5dd63dce678, type: 3}
     - target: {fileID: 1402150946294204436, guid: 01f70e4e02a760c4681cff3a7706f87d, type: 3}
       propertyPath: m_Name
       value: Goose (1)
@@ -2170,6 +2178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7902985170433278283, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 348b3db9b87e6394291615bc41394e57, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
 --- !u!1001 &1024946535
@@ -2863,6 +2875,11 @@ PrefabInstance:
     - target: {fileID: 916589041800609637, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112272858867272867, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
+      propertyPath: m_Text
+      value: "Finally, you are in the client's kitchen, and it is the moment to reach
+        your purpose: be eaten. \nGo to the dish!"
       objectReference: {fileID: 0}
     - target: {fileID: 7147825370487525973, guid: bce1aaeb82d9f9e4a8dfbd4d139d95ea, type: 3}
       propertyPath: m_IsActive
