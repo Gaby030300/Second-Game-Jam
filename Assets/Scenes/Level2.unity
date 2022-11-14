@@ -15842,42 +15842,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 83b3a0606e9b3214c81cf893075155b5, type: 3}
   m_PrefabInstance: {fileID: 1957699478}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!4 &2056621086 stripped
-=======
---- !u!1 &2068005612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2068005614}
-  - component: {fileID: 2068005613}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2068005613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068005612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e1b0824bbdd4c04791332ade79cf5bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnButton: {fileID: 0}
-  OffButton: {fileID: 0}
---- !u!4 &2068005614
->>>>>>> parent of fd7d1e3 (Sound Manager)
 Transform:
   m_CorrespondingSourceObject: {fileID: 6286420641747525360, guid: 002d177a87b849f4bba99d3c5a1b33e3, type: 3}
   m_PrefabInstance: {fileID: 1559528871}
