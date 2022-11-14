@@ -60,12 +60,14 @@ GameObject:
   - component: {fileID: 5076714655998445473}
   - component: {fileID: 6122577124788848172}
   - component: {fileID: 3351512185448009581}
+  - component: {fileID: 8223914800948325602}
+  - component: {fileID: 2274427051831396236}
   m_Layer: 0
   m_Name: Faucet
   m_TagString: Floor
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6757329256946696737
 Transform:
@@ -185,3 +187,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4993484, y: 0.89522344, z: 0.22220117}
   m_Center: {x: 0.5677933, y: 0.44761172, z: -0.7891538}
+--- !u!65 &8223914800948325602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236653724234274971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1433127, y: 0.43818933, z: 2.9844868}
+  m_Center: {x: 0.45860228, y: 0.4815548, z: -2.5087934}
+--- !u!114 &2274427051831396236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236653724234274971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31dde67ed7f70f047b3d0e1972587949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: 
