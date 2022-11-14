@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 104.42
+      value: -34.17737
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.4
+      value: 20.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.5036
+      value: 13.050327
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalRotation.w
@@ -228,7 +228,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402150946294204436}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ecc1c1040879999409084f0847e5b89d, type: 2}
   m_CullingMode: 0
@@ -240,47 +240,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &57498009
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402150946294204436}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 7
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &57498010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402150946294204436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ad647d98ccd7a47a98f3f18bbec29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 57498009}
-  player: {fileID: 0}
-  distance: 50
-  animGoose: {fileID: 521715221}
-  canMove: 0
-  collider: {fileID: 1367684853}
-  gooseEffect: {fileID: 8300000, guid: d6584c0a31849b2439aa6b47084c58b2, type: 3}
 --- !u!114 &1367684856
 MonoBehaviour:
   m_ObjectHideFlags: 0
