@@ -361,7 +361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ccd7e27181cb53d43af56997b4f07f2d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c607224daa6a2e044b605e13d7354b94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -473,6 +473,10 @@ PrefabInstance:
     - target: {fileID: 7147825370958800336, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
       propertyPath: m_Name
       value: FadeInTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147825370958800336, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69342044b9520e54596ac04716c67ac1, type: 3}
