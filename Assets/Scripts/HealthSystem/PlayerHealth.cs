@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -55,6 +56,7 @@ public class PlayerHealth : MonoBehaviour
                 Debug.Log("Game Over");
                 animator.SetBool("Death", true);
                 playerController.enabled = false;
+                StartCoroutine(Deathdelay());
             }
         }
     }
@@ -67,4 +69,12 @@ public class PlayerHealth : MonoBehaviour
         animator.SetBool("Hit", false);
     }
 
+
+
+    private IEnumerator Deathdelay()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("DeathGoose");
+
+    }
 }
