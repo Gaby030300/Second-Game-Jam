@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef47290097d65bb41ae3c0f3da6dbd5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetivo: {fileID: 0}
   alturaJugador: 3
   distanciaPared: 0.1
   maxDistancia: 14

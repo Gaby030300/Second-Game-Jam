@@ -6,6 +6,7 @@ public class GalaController : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private ScoreOfGalas score;
+
     // Update is called once per frame
     void Update()
     {
@@ -16,7 +17,8 @@ public class GalaController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            score.aumentScore();
+            other.GetComponent<PlayerController>().PlaySoundEffect();
+            score.aumentScore();            
             Destroy(gameObject);
         }
     }
