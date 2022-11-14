@@ -5819,6 +5819,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1206899845}
+    - target: {fileID: 995470221, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+      propertyPath: levelName
+      value: DeathGooseLv3
+      objectReference: {fileID: 0}
     - target: {fileID: 4474498847584216260, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -277.3

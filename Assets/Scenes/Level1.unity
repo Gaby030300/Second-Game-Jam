@@ -23955,6 +23955,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7649278587676242267, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
   m_PrefabInstance: {fileID: 2025859486}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1410613449 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1410613443, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+  m_PrefabInstance: {fileID: 2025859486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1412032049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34466,11 +34471,15 @@ PrefabInstance:
     - target: {fileID: 995470221, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 7007163850641728086, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+      objectReference: {fileID: 1410613449}
     - target: {fileID: 995470221, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 618217647}
+    - target: {fileID: 995470221, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
+      propertyPath: levelName
+      value: DeathGooseLv1
+      objectReference: {fileID: 0}
     - target: {fileID: 4764936097862311750, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

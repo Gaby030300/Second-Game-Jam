@@ -15,6 +15,6 @@ public class GameOverController : MonoBehaviour
     }
     public void OnButtonRestart()
     {
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(levelName);        
     }
 }
