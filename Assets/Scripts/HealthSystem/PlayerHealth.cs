@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 100.0f;
     public float currentHealth;
     public bool Death;
+    public string levelName;
 
     //animator
     public Animator animator;
@@ -52,7 +53,7 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             if (!Death)
-            {
+            {                
                 Debug.Log("Game Over");
                 animator.SetBool("Death", true);
                 playerController.enabled = false;
@@ -73,8 +74,8 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator Deathdelay()
     {
-        yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("DeathGoose");
+        yield return new WaitForSeconds(5);        
+        SceneManager.LoadScene(levelName);
 
     }
 }
