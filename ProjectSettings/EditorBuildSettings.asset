@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathKitchen.unity
     guid: 5aec81ef55374644ebd3d45aa85fe62a
+  - enabled: 1
+    path: Assets/Scenes/DeathGoose.unity
+    guid: f4a49125bb2d82940a42e01a97243baa
   m_configObjects: {}
