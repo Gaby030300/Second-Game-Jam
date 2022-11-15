@@ -8,7 +8,7 @@ public class ProjectileController : MonoBehaviour
     {
         if (other.CompareTag("Goose"))
         {
-            other.GetComponent<GooseController>().die();            
+            other.GetComponent<EnemyController>().Die();            
             Destroy(gameObject);
         }
     }
