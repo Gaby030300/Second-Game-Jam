@@ -5938,7 +5938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855565523}
   m_Layer: 0
-  m_Name: Gooses
+  m_Name: Geese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6816,15 +6816,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7649278587676242267, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 341
+      value: -4.41
       objectReference: {fileID: 0}
     - target: {fileID: 7649278587676242267, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 71.43
+      value: 37.17
       objectReference: {fileID: 0}
     - target: {fileID: 7649278587676242267, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -177
+      value: 6.69
       objectReference: {fileID: 0}
     - target: {fileID: 7649278587676242267, guid: af0a59a034f75404a89024ad8eefe0c3, type: 3}
       propertyPath: m_LocalRotation.w
