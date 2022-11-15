@@ -13,3 +13,6 @@ TRELLO: https://trello.com/b/rrCBP8dn/jam-supervivencia-gp13
 
 # ACCESS TO THE ITCH.IO VIDEO GAME
 LINK TO ACCESS: https://gaby030300.itch.io/cake-vs-goose
+
+# COMMENTS AND REVIEW
+LINK TO ACCESS: https://cutt.ly/CMm92pE
