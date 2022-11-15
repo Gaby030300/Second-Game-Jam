@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.9
+      value: 12.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_Name
-      value: Goose (1)
+      value: Goose (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48825fef67079a43a326ca412364e01, type: 3}
       propertyPath: m_TagString
@@ -228,7 +228,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402150946294204436}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ecc1c1040879999409084f0847e5b89d, type: 2}
   m_CullingMode: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  endPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: -19, y: 20.4, z: 11.9}
   animGoose: {fileID: 521715221}
   canMove: 0
   collider: {fileID: 1367684853}
