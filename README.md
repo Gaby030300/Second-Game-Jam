@@ -6,7 +6,7 @@ Our cake needs to reach our client. However, it must leave the factory, go throu
 ![Captura de pantalla_20221109_095127](https://user-images.githubusercontent.com/44000056/200992974-687c8c95-988e-4105-83d3-4c2c5e98586e.png)
 
 # GAME DESIGN DOCUMENT (GDD)
-GDD: [GAME DESIGN DOCUMENT (1).pdf](https://github.com/Gaby030300/Second-Game-Jam/files/9998231/GAME.DESIGN.DOCUMENT.1.pdf)
+GDD: [GAME DESIGN DOCUMENT (2) (1).pdf](https://github.com/Gaby030300/Second-Game-Jam/files/10014057/GAME.DESIGN.DOCUMENT.2.1.pdf)
 
 # PROJECT MANAGEMENT
 TRELLO: https://trello.com/b/rrCBP8dn/jam-supervivencia-gp13
